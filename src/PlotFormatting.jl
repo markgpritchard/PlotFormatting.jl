@@ -1,5 +1,19 @@
+
 module PlotFormatting
 
-# Write your package code here.
+using CairoMakie 
+
+include("consts.jl")
+include("formatting.jl")
+include("labelling.jl")
+
+## consts.jl
+export COLOURVECTOR
+
+## formatting.jl
+export formataxis!, formataxishidespines!, setvalue!, setorigin!
+
+## labelling.jl
+export labelplots!
 
 end
