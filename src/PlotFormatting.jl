@@ -2,6 +2,7 @@
 module PlotFormatting
 
 using CairoMakie 
+using Makie.Colors
 
 include("consts.jl")
 include("formatting.jl")
