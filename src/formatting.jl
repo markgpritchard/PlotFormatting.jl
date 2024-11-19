@@ -34,11 +34,13 @@ function formataxis!(
     axis::Axis, width=800; 
     hidex=false, hidexticks=false, hidey=false, hideyticks=false, 
     setorigin=false, setpoint=nothing, #trimspines = true
+    ticksize=3.0
 )
     #formataxishidespines!(axis, hidespines)
     #axis.spinewidth = width / 800
     #axis.xtrimspine = trimspines; axis.ytrimspine = trimspines
     axis.xgridvisible = false; axis.ygridvisible = false
+    axis.xticksize = ticksize; axis.yticksize = ticksize
     axis.xtickwidth = width / 800; axis.ytickwidth = width / 800
     axis.xlabelsize = width / 67; axis.ylabelsize = width / 67
     axis.xticklabelsize = width / 80; axis.yticklabelsize = width / 80
