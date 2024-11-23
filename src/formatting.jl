@@ -143,6 +143,6 @@ setorigin!(axis) = setvalue!(axis)
 _formataxishidespines!(axis, hidespines::Nothing) = nothing
 _formataxishidespines!(axis, hidespines::Symbol) = hidespines!(axis, hidespines)
 
-function _formataxishidespines!(axis, hidespines::AbstractArray)
+function _formataxishidespines!(axis, hidespines::T) where T <: Union{<:AbstractArray, <:Tuple}
     for d ∈ hidespines hidespines!(axis, d) end
 end 
