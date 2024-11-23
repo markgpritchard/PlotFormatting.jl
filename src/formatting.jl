@@ -60,7 +60,7 @@ function formataxis!(
     if setorigin setorigin!(axis) end 
     setvalue!(axis, setpoint)
     if hidex hidexdecorations!(axis; ticks=hidexticks) end
-    if hidey hideydecorations!(axis; ticks = hideyticks) end 
+    if hidey hideydecorations!(axis; ticks=hideyticks) end 
 end 
 
 function formataxis!(axis::Axis3; setorigin=false)
