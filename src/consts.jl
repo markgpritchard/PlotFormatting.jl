@@ -1,4 +1,7 @@
 
+struct Automatic end 
+const automatic = Automatic()
+
 const COLOURVECTOR = [
     RGBf(33 / 255, 145 / 255, 140 / 255),
     RGBf(68 / 255, 57 / 255, 131 / 255),

@@ -84,16 +84,25 @@ function formataxis!(axis::Axis3; setorigin=false)
     if setorigin setorigin!(axis) end
 end 
 
-function formataxis!(legend::Legend; horizontal=true)
+function formataxis!(legend::Legend; horizontal=true, titleposition=automatic)
     legend.framevisible = false
     legend.labelsize = 10
     legend.titlesize = 10
     legend.patchsize = ( 20, 20 )
     if horizontal
         legend.orientation = :horizontal
-        legend.titleposition = :left
+        if titleposition == automatic
+            legend.titleposition = :left
+        else
+            legend.titleposition = titleposition 
+        end
     else 
         legend.margin = ( 10, 10, 10, 10 )
+        if titleposition == automatic
+            legend.titleposition = :top
+        else
+            legend.titleposition = titleposition 
+        end
     end 
 end 
 
