@@ -1,14 +1,14 @@
 name = "PlotFormatting"
 uuid = "fafed4c3-eaab-4ef5-9b79-61964d847033"
 authors = ["Mark Pritchard <mark.pritchard@ndm.ox.ac.uk>"]
-version = "0.2.2"
+version = "0.2.3"
 
 [deps]
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 
 [compat]
-Makie = "0.21"
+Makie = "0.21, 0.22"
 julia = "1.6"
 
 [extras]
